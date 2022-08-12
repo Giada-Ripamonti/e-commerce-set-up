@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
+import { HeaderModule } from './00_header/header.module';
 import { FooterModule } from './footer/footer.module';
+import { HomeModule } from './01_home/home.module';
 import { CoreModule } from './core/core.module';
-import { HomeModule } from './home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,8 +19,9 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     HeaderModule,
     FooterModule,
+    HomeModule,
     CoreModule,
-    HomeModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,32 @@
+<nav>
+    <div>
+        <button type="button"><span class="iconify" data-icon="eva:close-circle-fill"></span></button>
+    </div>
+
+    <div>
+        <input type="text" placeholder="search"><span class="iconify" data-icon="bi:search"></span>
+    </div>
+
+    <ul>
+        <li><a href="#">Shop</a></li>
+        <ul>
+            <li><a href="#" [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a></li>
+            <li><a href="#" [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a></li>
+            <li><a href="#" [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a></li>
+        </ul>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
+    </ul>
+
+    <div id="theme">
+        <div id="toggle">
+            <label>
+                <input type="checkbox">
+            </label>
+        </div>
+        <div>
+            <p>save energy</p>
+        </div>
+    </div>
+</nav>

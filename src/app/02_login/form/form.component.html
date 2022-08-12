@@ -1,0 +1,23 @@
+<div>
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="email">email</label>
+            <input type="email" ngModel id="email" name="email" placeholder="example@email.com" autofocus required>    
+        </div>
+        
+        <div>
+            <label for="password">password</label>
+            <input type="password" ngModel id="password" name="password" placeholder="enter your password" required>
+            <p><a href="#">Forgot password</a></p>
+        </div>
+        
+        <div>
+            <button type="submit">Login</button>
+            <p>or</p>
+            <button type="button"><a href="#" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Sign Up</a></button>
+        </div>
+    </form>
+
+    <p *ngIf="error">{{error}}</p>
+</div>
+

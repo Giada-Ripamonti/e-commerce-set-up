@@ -1,0 +1,74 @@
+{
+  "users": [
+  ],
+  "products": [
+    {
+      "id": 1,
+      "type": "dresses",
+      "slug": "dresses",
+      "thumbnail": "img/dress1.png",
+      "productImgs": ["img/dress1.png", "img/dress1.png", "img/dress1.png"],
+      "productName": "Long dress",
+      "price": 50.5,
+      "colours": [
+        "orange",
+        "green",
+        "yellow"
+      ],
+      "sizes":[{"size": "XS", "n": 3}, {"size": "S", "n": 7}, {"size": "L", "n": 1}],
+      "qty": 0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 2,
+      "type": "dresses",
+      "slug": "dresses",
+      "thumbnail": "img/dress2.png",
+      "productImgs": ["img/dress1.png", "img/dress1.png", "img/dress1.png"],
+      "productName": "Short dress",
+      "price": 30.5,
+      "colours": [
+        "black",
+        "pink",
+        "cream"
+      ],
+      "sizes":[{"size": "XS", "n": 3}, {"size": "S", "n": 7}, {"size": "L", "n": 1}],
+      "qty": 0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 3,
+      "type": "bottoms",
+      "slug": "bottoms",
+      "thumbnail": "img/dress2.png",
+      "productImgs": ["img/dress1.png", "img/dress1.png", "img/dress1.png"],
+      "productName": "Long skirt",
+      "price": 30.5,
+      "colours": [
+        "white",
+        "green",
+        "orange"
+      ],
+      "sizes":[{"size": "S", "n": 3}, {"size": "M", "n": 7}, {"size": "XL", "n": 1}],
+      "qty": 0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 4,
+      "type": "tees",
+      "slug": "tees-tops",
+      "thumbnail": "img/dress2.png",
+      "productImgs": ["img/dress1.png", "img/dress1.png", "img/dress1.png"],
+      "productName": "T-shirt",
+      "price": 10,
+      "colours": [
+        "blue",
+        "white",
+        "cream"
+      ],
+      "sizes":[{"size": "XS", "n": 1}, {"size": "L", "n": 7}, {"size": "XL", "n": 1}],
+      "qty": 0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ]
+}

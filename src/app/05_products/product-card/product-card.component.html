@@ -1,0 +1,7 @@
+<div class="card" *ngFor="let product of prodList">
+    <img [src]="product.thumbnail" [alt]="product.productName" loading="lazy">
+    <h2>{{product.productName}}</h2>
+    <p>{{product.price}} €</p>
+    <div>{{product.colours}}</div>
+    <button type="button"><a href="#" [routerLink]="['/product-detail', product.id]" routerLinkActive="router-link-active" >Show</a></button>
+</div>
