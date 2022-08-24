@@ -17,6 +17,8 @@ const routes: Routes = [
   { path: 'products', loadChildren: () => import('./05_products/products.module').then(m => m.ProductsModule) },
   
   { path: 'product-detail/:id', loadChildren: () => import('./06_product-detail/product-detail.module').then(m => m.ProductDetailModule) },
+  
+  { path: 'credits', loadChildren: () => import('./credits/credits.module').then(m => m.CreditsModule) },
 
   { path: '**', loadChildren: () => import('./err404/err404.module').then(m => m.Err404Module) },
 ];

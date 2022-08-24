@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/auth/auth.service';
 })
 export class ProfilePage implements OnInit {
 
- userName: string | undefined;
+  userName: string | undefined;
 
   constructor(private authService: AuthService) { }
 

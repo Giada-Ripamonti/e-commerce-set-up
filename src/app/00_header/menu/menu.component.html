@@ -1,23 +1,22 @@
-<nav>
-    <div>
-        <button type="button"><span class="iconify" data-icon="eva:close-circle-fill"></span></button>
-    </div>
-
-    <div>
-        <input type="text" placeholder="search"><span class="iconify" data-icon="bi:search"></span>
-    </div>
-
-    <ul>
-        <li><a href="#">Shop</a></li>
-        <ul>
-            <li><a href="#" [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a></li>
-            <li><a href="#" [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a></li>
-            <li><a href="#" [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a></li>
-        </ul>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
-    </ul>
+<div id="container">
+    <mat-form-field appearance="outline">
+        <mat-label>Search</mat-label>
+        <input matInput placeholder="Placeholder">
+        <i class="bi bi-search"></i>
+    </mat-form-field>
+    
+    <mat-nav-list>
+        <button mat-button [matMenuTriggerFor]="shopMenu">Shop</button>
+            <mat-menu #shopMenu="matMenu" yPosition="below">
+                <a mat-menu-item href="#" [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a>
+                <a mat-menu-item href="#" [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a>
+                <a mat-menu-item href="#" [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a>
+            </mat-menu>
+        
+        <a mat-list-item href="#">Sustainability</a>  
+        <a mat-list-item href="#">About</a>   
+        <a mat-list-item href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+    </mat-nav-list>
 
     <div id="theme">
         <div id="toggle">
@@ -29,4 +28,4 @@
             <p>save energy</p>
         </div>
     </div>
-</nav>
+</div>

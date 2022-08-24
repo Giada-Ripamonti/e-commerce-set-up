@@ -1,3 +1,11 @@
+@import '/src/scss/variables';
+
 div {
-    background-color: rgb(255, 177, 87);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: $blue-grey;
+    a {
+        color: $light-almond;
+    }
 }

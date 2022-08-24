@@ -1,8 +1,39 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+@import 'scss/variables';
+@import 'scss/buttons';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
+    background-color: $mint;
+    font-family: $font-sans-serif;
+    color: $dark-grey;
     margin: 0;
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-serif;
+    text-transform: lowercase;
+    margin: 1rem;
+    padding: 0;
+}
+
+a {
+    color: $dark-grey;
+    &:hover {
+        color: $dark-brown;
+    }
+}
+
+p {
+    font-size: $font-size-xs;
+    margin: 1rem;
+    padding: 0;
 }

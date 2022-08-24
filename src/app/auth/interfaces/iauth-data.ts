@@ -5,5 +5,6 @@ export interface IauthData {
       firstname: string;
       lastname: string;
       id: number;
+      phone?: number;
     };
 }

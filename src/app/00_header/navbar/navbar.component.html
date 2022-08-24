@@ -1,6 +1,27 @@
-<div>
-   <app-menu></app-menu>
-   <button type="button"><span class="iconify" data-icon="charm:menu-hamburger"></span></button>
-   <a href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" ><h1>Brand</h1></a> 
-   <app-panel></app-panel>
-</div>
+<mat-sidenav-container>
+   <mat-sidenav #sidenav fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'over'"
+        [opened]="(isHandset$ | async) === true">
+        
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.close()"><i class="bi bi-x-circle"></i></button>
+        
+        <app-menu></app-menu>
+   </mat-sidenav>
+
+   <mat-sidenav-content>
+      <mat-toolbar color="primary">
+         
+         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.open()"><i class="bi bi-list"></i></button>
+         
+         <div id="logo">
+            <img src="./assets/imgs/001-leaves.svg" alt="brand-logo">
+            <a href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" ><h1>Brand</h1></a> 
+         </div>
+         
+         <app-panel></app-panel>               
+        
+      </mat-toolbar>
+   </mat-sidenav-content>
+
+</mat-sidenav-container>

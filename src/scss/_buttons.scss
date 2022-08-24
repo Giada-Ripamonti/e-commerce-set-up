@@ -1,0 +1,8 @@
+.btn-primary {
+    font-size: $font-size-s;
+    border: none;
+    background-color: $brown;
+    &:hover {
+        background-color: $light-almond;
+    }
+}
