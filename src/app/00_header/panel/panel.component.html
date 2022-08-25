@@ -1,11 +1,9 @@
 <div id="panel">
-    <div>
-        <button class="btn-primary" type="button"><a href="#" [routerLink]="['/login']" routerLinkActive="router-link-active" ><i class="bi bi-box-arrow-in-right"></i></a></button>
+    <div id="login" *ngIf="!logged">
+        <button class="btn-primary" type="button"><a href="#" [routerLink]="['/login']" routerLinkActive="router-link-active">login <i class="bi bi-box-arrow-in-right"></i></a></button>
     </div>
-    <div>
-        <button type="button"><a href="#" [routerLink]="['/profile']" routerLinkActive="router-link-active" ><i class="bi bi-person-fill"></i></a></button>
-    </div>
-    <div>
-        <button type="button"><a href="#"><i class="bi bi-bag-fill"></i></a></button>
-    </div>
+
+    <button class="icon-btn" type="button"><a href="#" [routerLink]="['/profile']" routerLinkActive="router-link-active" ><i class="bi bi-person-fill"></i></a></button>
+    
+    <button class="icon-btn" type="button"><a href="#"><i class="bi bi-bag-fill"></i></a></button>
 </div>

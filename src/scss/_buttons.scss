@@ -1,8 +1,45 @@
+button {
+    border-radius: 2px;
+}
+
 .btn-primary {
     font-size: $font-size-s;
+    font-weight: bold;
     border: none;
-    background-color: $brown;
-    &:hover {
-        background-color: $light-almond;
+    background-color: $light-almond;
+    padding: 0.5rem 1rem;  
+    /* &:hover {
+        box-shadow: 3px 5px 8px 1px $blue-grey;  
+    } */
+    &:active {
+        transform: translateY(0.5px);
+        background-color: $dark-almond;
     }
+    a {
+        color: $dark-brown;
+        font-size: 1rem;
+        text-transform: lowercase;
+        text-decoration: none;
+    } 
+}
+
+.nav-btn {
+    background-color: $sage;
+    border: transparent;
+    i {
+        font-size: $font-size-s;
+    }
+    &:hover, &:active {
+        color: $almond;
+    }
+}
+
+.icon-btn {
+    font-size: $font-size-s;
+    border: none;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    background-color: $mint;
 }

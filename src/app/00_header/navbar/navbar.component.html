@@ -4,7 +4,7 @@
         [mode]="(isHandset$ | async) ? 'over' : 'over'"
         [opened]="(isHandset$ | async) === true">
         
-        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.close()"><i class="bi bi-x-circle"></i></button>
+        <button class="nav-btn" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.close()"><i class="bi bi-x-circle"></i></button>
         
         <app-menu></app-menu>
    </mat-sidenav>
@@ -12,7 +12,7 @@
    <mat-sidenav-content>
       <mat-toolbar color="primary">
          
-         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.open()"><i class="bi bi-list"></i></button>
+         <button class="nav-btn" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.open()"><i class="bi bi-list"></i></button>
          
          <div id="logo">
             <img src="./assets/imgs/001-leaves.svg" alt="brand-logo">

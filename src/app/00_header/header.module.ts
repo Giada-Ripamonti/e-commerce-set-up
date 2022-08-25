@@ -9,7 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -26,9 +26,7 @@ import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
     MatMenuModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MatFormFieldModule,
-    MatLabel
-
+    MatExpansionModule
   ],
   exports: [
     NavbarComponent

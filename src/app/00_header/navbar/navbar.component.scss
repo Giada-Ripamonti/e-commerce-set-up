@@ -1,10 +1,22 @@
 @import '/src/scss/variables';
 
 mat-toolbar {
-    background-color: $sage;
+    background-color: $sage !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+mat-sidenav {
+    background-color: $sage !important;
+    width: 35%;
+    button {
+        margin: 1rem;
+    }
+}
+
+button {
+    width: 1rem;
 }
 
 #logo {

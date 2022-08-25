@@ -1,4 +1,21 @@
+@import '/src/scss/variables';
+
 #panel {
     display: flex;
     justify-content: space-between;
+}
+
+#login {
+    margin-right: 1rem;
+    button {
+        width: 6rem;
+        i{
+            display: none;
+        }
+    &:hover{
+        i{
+            display: inline;
+        }
+    }
+    }
 }
