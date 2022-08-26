@@ -1,25 +1,34 @@
 /* ----------- font ----------- */
 $font-serif: Georgia, 'Times New Roman', Times, serif;
 $font-sans-serif: Arial, Helvetica, sans-serif;
-$font-size-xs: 1rem;
-$font-size-s: 1.5rem;
-$font-size-m: 2rem;
-$font-size-l: 3rem;
 
-/* ----------- colours main ----------- */
+$font-size-xs: 0.5rem;
+$font-size-s: 1rem;
+$font-size-m: 1.5rem;
+$font-size-l: 2rem;
+
+/* ----------- colours ----------- */
 $mint: #b8d1b7;
+$dark-mint: #91BB90;
+
 $sage: #86B197;
+$dark-sage: #668C75;
+
 $blue-grey: #384b45;
+
 $brown: #D0802E;
+$dark-brown: #995f25;
+
 $almond: #EFCAA5;
 $light-almond: #fcf4d1;
+$dark-almond: #facea2;
 
+$grey: #9aa5a3;
 $light-grey: #d8d8d8;
 $dark-grey: #242424;
-$grey: #9aa5a3;
 
-/* ----------- colours dark ----------- */
-$dark-mint: #91BB90;
-$dark-sage: #668C75;
-$dark-brown: #995f25;
-$dark-almond: #facea2;
+/* ----------- breakpoints ----------- */
+$screen-s : 576px;
+$screen-m : 768px;
+$screen-l : 992px;
+$screen-xl : 1200px;

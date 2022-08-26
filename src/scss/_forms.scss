@@ -1,29 +1,60 @@
 .form-container {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     background-color: $light-almond;
-    margin-top: 4rem;
+    margin: 2rem auto 0 auto;
     border-radius: 2px;
-    text-align: center;
+    @include screen-min($screen-s){
+        width: 80%;}
+    @include screen-min($screen-m){
+        width: 60%;}
+    @include screen-min($screen-l){
+        width: 40%;}
+    .icon-btn {
+        background-color: transparent;
+        margin: 1rem;
+        &:hover {
+            border: 1px solid $blue-grey;
+        }
+    }
+    h1, p {
+        text-align: center;
+    }
 }
 
 .form {
     margin: 3rem auto;
     width: fit-content;
-    mat-form-field {
-        width: 30vw;
-        align-items: center !important;
-        i {
-            font-size: $font-size-xs;
-        }
-        mat-label {
-            color: $dark-brown;
+    div {
+        mat-form-field {
+            width: 80vw;
+            height: 4.5rem;
+            @include screen-min($screen-s){
+                width: 70vw;}
+            @include screen-min($screen-m){
+                width: 50vw;}
+            @include screen-min($screen-l){
+                width: 30vw;}
+            i {
+                font-size: $font-size-xs;
+                margin: auto;
+            }
+            i, mat-label {
+                color: $dark-brown;
+                align-items:stretch;
+            }
+            mat-label, input {
+                margin-left: 0.5rem;
+            }
         }
     }
-    button {
-        width: 100%;
-        margin: 1rem 0;
-        padding: 1rem;
+    .btn-container {
+        margin-top: 2rem;
+        button {
+            width: 100%;
+            margin: 1rem 0;
+            padding: 1rem;
+        }
     }
     .error {
         padding: 0.2rem;
@@ -36,7 +67,3 @@
         }
     }
 }
-
-
-
-

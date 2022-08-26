@@ -1,11 +1,23 @@
 @import '/src/scss/variables';
+@import '/src/scss/mixins';
 
 a {
     text-decoration: none;
-    &:hover {
+    font-size: $font-size-m !important;
+    @include screen-min($screen-m){
+        font-size: $font-size-s !important;}
+    &:hover, .router-link-active {
         color: $light-almond;
         text-decoration: underline;
-        font-size: $font-size-s;
+        font-size: 250% !important;
+        @include screen-min($screen-m){
+            font-size: 200% !important;}
+    }
+}
+
+mat-nav-list {
+    div:last-child{
+        margin-top: 1.5rem;
     }
 }
 
@@ -18,9 +30,17 @@ mat-expansion-panel {
     mat-expansion-panel-header, mat-panel-title {
         padding: 0px !important;
         margin: 0px !important;
+        background-color: transparent !important;
     }
-    .subMenu:hover {
-        font-size: $font-size-xs;
-        background-color: $sage !important;
+    .subMenu{
+        margin-bottom: 1.5rem;
+        p {
+            line-height: 1em;
+            @include screen-min($screen-s){
+                line-height: 1.2em;}
+            a:hover {
+                background-color: transparent !important;
+            } 
+        }
     }
 }

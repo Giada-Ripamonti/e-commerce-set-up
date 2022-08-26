@@ -40,14 +40,15 @@
             </mat-form-field>
         </div>
 
-        <div>
-            <button class="btn-primary" type="submit"><a href="">Sign Up</a></button>
+        <div class="btn-container">
+            <button class="btn-primary" type="submit">Sign Up</button>
+            <div *ngIf="error" class="error">
+                <p>{{error}}</p>
+            </div>
+            <p>or</p>
+            <button class="btn-secondary" type="button" [routerLink]="['/login']">Login</button>
         </div>
     </form>
-
-    <div *ngIf="error" class="error">
-        <p>{{error}}</p>
-    </div>
     
 </div>
 

@@ -1,20 +1,26 @@
-<div id="container">      
-    <mat-nav-list>
-        <mat-accordion>
-            <mat-expansion-panel hideToggle>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <a mat-list-item>Shop</a>
-                    </mat-panel-title>  
-                </mat-expansion-panel-header>
-                    <a class="subMenu" mat-menu-item href="#" [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a>
-                    <a class="subMenu" mat-menu-item href="#" [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a>
-                    <a class="subMenu" mat-menu-item href="#" [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a>
-            </mat-expansion-panel>
-        </mat-accordion>
+<mat-nav-list>
+    
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <a mat-list-item>Shop</a>
+                </mat-panel-title>  
+            </mat-expansion-panel-header>
 
+            <div class="subMenu">
+                <p><a mat-menu-item href="#" [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a></p>
+                <p><a mat-menu-item href="#" [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a></p>
+                <p><a mat-menu-item href="#" [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a></p>         
+            </div>
+                
+        </mat-expansion-panel>
+    </mat-accordion>
+
+    <div>
         <a mat-list-item href="#">Sustainability</a>  
         <a mat-list-item href="#">About</a>   
         <a mat-list-item href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
-    </mat-nav-list>
-</div>
+    </div>
+    
+</mat-nav-list>

@@ -2,17 +2,13 @@ button {
     border-radius: 2px;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    a {
-        color: $dark-brown;
-        text-decoration: none;
-        font-size: $font-size-xs;
-        text-transform: lowercase;
-    }
-    
+    font-size: $font-size-xs;
+    text-transform: lowercase;
 }
 
 .btn-primary {
     border: none;
+    color: $blue-grey;
     background-color: $brown;
     &:hover {
         box-shadow: 2px 2px 4px 1px $blue-grey;  
@@ -28,6 +24,13 @@ button {
 .btn-secondary {
     border: 2px solid $dark-brown;
     background-color: transparent;
+    color: $dark-brown;
+    &:hover {
+        background-color: $dark-almond;  
+    }
+    &:active {
+        transform: scale(99%) ;
+    }
 }
 
 .nav-btn {
@@ -45,13 +48,14 @@ button {
 .icon-btn {
     border: none;
     border-radius: 100%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     margin-left: 0.5rem;
     background-color: $mint;
     padding: 0;
     a {
         color: $blue-grey;
         font-size: $font-size-s;
+        text-decoration: none;
     }
 }

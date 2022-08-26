@@ -1,11 +1,70 @@
 @import '/src/scss/variables';
+@import '/src/scss/mixins';
 
-div {
-    width: 100%;
+#footer-container {
     position: relative;
+    width: 100%;
+    left: 0;
     bottom: 0;
     background-color: $blue-grey;
-    a {
+    padding: 1rem;
+    &, a {
         color: $light-almond;
+    }
+    a {
+        text-decoration: none !important;
+    } &:hover {
+        text-decoration: underline !important;
+        font-weight: bolder;
+    } &:active {
+        color: $dark-mint;
+    }
+    & > p {
+        text-align: center;
+        font-size: 0.5 rem;
+    }
+}
+
+#footer-main {
+    display: flex;
+    flex-direction: column;
+    @include screen-min($screen-m){
+        flex-direction: row;}
+}
+
+#footer-txt {
+    display: inline-flex;
+    flex-wrap: wrap;
+    div {
+        width: 8.5rem;
+    }
+    .title {
+        font-size: $font-size-s;
+        font-weight: bold;
+    }
+}
+
+#footer-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    @include screen-min($screen-m){
+        flex-direction: column;}
+    #badge {
+        background-color: $light-almond;
+        border-radius: 10px;
+        border: 1px solid $dark-brown;
+        p {
+            color: $blue-grey;
+            margin: 1rem;
+        }
+    }
+    div:last-child {
+        display: flex;
+        i {
+            margin-right: 0.8rem;
+            font-size: $font-size-s;
+        }
     }
 }
