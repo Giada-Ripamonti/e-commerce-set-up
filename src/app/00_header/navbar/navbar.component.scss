@@ -17,9 +17,9 @@ mat-sidenav {
     background-color: $sage !important;
     width: 100%;
     @include screen-min($screen-s){
-        width: 55%;}
+        width: 45%;}
     @include screen-min($screen-m){
-        width: 40%;}
+        width: 30%;}
     button {
         margin: 1rem;
     }
@@ -35,7 +35,7 @@ mat-sidenav {
     @include screen-min($screen-s){
         left: 40vw;}
     @include screen-min($screen-m){
-        left: 42vw;}
+        left: 45vw;}
     a {
         display: none;
         @include screen-min($screen-s){

@@ -3,5 +3,5 @@
     <h2>{{product.productName}}</h2>
     <p>{{product.price}} €</p>
     <div>{{product.colours}}</div>
-    <button type="button"><a href="#" [routerLink]="['/product-detail', product.id]" routerLinkActive="router-link-active" >Show</a></button>
+    <button class="btn-primary" type="button" [routerLink]="['/product-detail', product.id]">Show</button>
 </div>

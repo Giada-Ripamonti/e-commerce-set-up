@@ -36,7 +36,7 @@
             @include screen-min($screen-l){
                 width: 30vw;}
             i {
-                font-size: $font-size-xs;
+                font-size: $font-size-m;
                 margin: auto;
             }
             i, mat-label {

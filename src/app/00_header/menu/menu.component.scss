@@ -9,9 +9,9 @@ a {
     &:hover, .router-link-active {
         color: $light-almond;
         text-decoration: underline;
-        font-size: 250% !important;
+        font-size: 180% !important;
         @include screen-min($screen-m){
-            font-size: 200% !important;}
+            font-size: 120% !important;}
     }
 }
 

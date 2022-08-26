@@ -2,8 +2,9 @@ button {
     border-radius: 2px;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
     text-transform: lowercase;
+    margin: 1rem 0;
 }
 
 .btn-primary {
@@ -15,9 +16,6 @@ button {
     }
     &:active {
         transform: translateY(0.5px);
-    }
-    a, a:hover {
-        color: $light-almond;
     }
 }
 
@@ -38,7 +36,7 @@ button {
     border: transparent;
     padding: 0;
     i {
-        font-size: $font-size-s;
+        font-size: $font-size-m;
     }
     &:hover, &:active {
         color: $almond;
@@ -48,8 +46,8 @@ button {
 .icon-btn {
     border: none;
     border-radius: 100%;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     margin-left: 0.5rem;
     background-color: $mint;
     padding: 0;

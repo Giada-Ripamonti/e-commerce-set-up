@@ -1,6 +1,6 @@
 <div id="panel">
     <div id="login" *ngIf="!logged">
-        <button class="btn-primary" type="button"><a href="#" [routerLink]="['/login']" routerLinkActive="router-link-active"><a>login</a><i class="bi bi-box-arrow-in-right"></i></a></button>
+        <button class="btn-primary" type="button" [routerLink]="['/login']">login<i class="bi bi-box-arrow-in-right"></i></button>
     </div>
 
     <button class="icon-btn" type="button"><a href="#" [routerLink]="['/profile']" routerLinkActive="router-link-active" ><i class="bi bi-person-fill"></i></a></button>

@@ -13,21 +13,26 @@
     }
     a {
         text-decoration: none !important;
-    } &:hover {
-        text-decoration: underline !important;
-        font-weight: bolder;
-    } &:active {
-        color: $dark-mint;
-    }
+        &:hover {
+            text-decoration: underline !important;
+        }
+        &:active {
+            color: $dark-mint;
+        }
+    } 
     & > p {
         text-align: center;
-        font-size: 0.5 rem;
+        font-size: 0.8rem;
+        a {
+            text-decoration: underline !important;
+        }
     }
 }
 
 #footer-main {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     @include screen-min($screen-m){
         flex-direction: row;}
 }
@@ -48,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem;
+    margin: 2rem 1rem;
     @include screen-min($screen-m){
         flex-direction: column;}
     #badge {
@@ -63,8 +68,8 @@
     div:last-child {
         display: flex;
         i {
-            margin-right: 0.8rem;
-            font-size: $font-size-s;
+            margin-left: 0.8rem;
+            font-size: $font-size-m;
         }
     }
 }
