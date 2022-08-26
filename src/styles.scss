@@ -4,13 +4,15 @@
 
 @import 'scss/variables';
 @import 'scss/buttons';
+@import 'scss/forms';
 
 * {
     box-sizing: border-box;
-}
-
-html {
-    height: 100%;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 body {

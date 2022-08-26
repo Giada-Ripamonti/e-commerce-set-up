@@ -1,23 +1,33 @@
-<div>
+<div class="form">
     <form #form="ngForm" (ngSubmit)="onSubmit()">
+
         <div>
-            <label for="email">email</label>
-            <input type="email" ngModel id="email" name="email" placeholder="example@email.com" autofocus required>    
+            <mat-form-field appearance="fill">
+                <mat-label>Insert your email</mat-label>
+                <input matInput type="email" ngModel id="email" name="email" placeholder="example@email.com" autofocus required>
+                <i matSuffix class="bi bi-envelope-fill"></i>
+            </mat-form-field>
         </div>
-        
+       
         <div>
-            <label for="password">password</label>
-            <input type="password" ngModel id="password" name="password" placeholder="enter your password" required>
-            <p><a href="#">Forgot password</a></p>
+            <mat-form-field appearance="fill">
+                <mat-label>Insert password</mat-label>
+                <input matInput type="password" ngModel id="password" name="password" placeholder="enter your password" required>
+                <i matSuffix class="bi bi-key-fill"></i>
+                <mat-hint><a href="">forgot password</a></mat-hint>
+            </mat-form-field>
         </div>
-        
+      
         <div>
-            <button type="submit">Login</button>
+            <button class="btn-primary" type="submit">Login</button>
             <p>or</p>
-            <button type="button"><a href="#" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Sign Up</a></button>
-        </div>
+            <button class="btn-secondary" type="button"><a href="#" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Sign Up</a></button>
+        </div> 
     </form>
 
-    <p *ngIf="error">{{error}}</p>
+    <div *ngIf="error" class="error">
+        <p>{{error}}</p>
+    </div>
+
 </div>
 

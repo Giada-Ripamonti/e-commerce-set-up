@@ -8,7 +8,14 @@
 #login {
     margin-right: 1rem;
     button {
+        background-color: $light-almond;
         width: 6rem;
+        a {
+          color: $dark-brown;
+        }
+        &:active {
+            background-color: $dark-almond;
+        }
         i{
             display: none;
         }

@@ -1,44 +1,54 @@
-<div>
+<div class="form">
     <form #form="ngForm" (ngSubmit)="onSubmit()">
+
         <div>
-            <label for="firstname">first name</label>
-            <input type="text" ngModel id="firstname" name="firstname" placeholder="first name" autofocus required>
+            <mat-form-field appearance="fill">
+                <mat-label>Your first name</mat-label>
+                <input matInput type="text" ngModel id="firstname" name="firstname" placeholder="first name" autofocus required>
+            </mat-form-field>
         </div>
 
         <div>
-            <label for="lastname">last name</label>
-            <input type="text" ngModel id="lastname" name="lastname" placeholder="last name" required>
-        </div>
-        
-        <div>
-            <label for="email">email</label>
-            <input type="email" ngModel id="email" name="email" placeholder="example@email.com"required>
+            <mat-form-field appearance="fill">
+                <mat-label>Your last name</mat-label>
+                <input matInput type="text" ngModel id="lastname" name="lastname" placeholder="last name" required>
+            </mat-form-field>
         </div>
 
         <div>
-            <label for="phone">phone</label>
-            <input type="phone" ngModel id="phone" name="phone" placeholder="phone number" required>
-        </div>
-        
-        <div>
-            <label for="password">password</label>
-            <input type="password" ngModel id="password" name="password" placeholder="password" required>
-            <p>Password requirements: </p>
-                <ul>
-                    <li>at least 8 characters</li>
-                    <li>a number</li>
-                    <li>one uppercase letter</li>
-                    <li>one lowercase letter</li>
-                    <li>a symbol</li>
-                </ul>
+            <mat-form-field appearance="fill">
+                <mat-label>Your email</mat-label>
+                <input matInput type="email" ngModel id="email" name="email" placeholder="example@email.com" required>
+                <i matSuffix class="bi bi-envelope-fill"></i>
+            </mat-form-field>
         </div>
 
         <div>
-            <button type="submit">Sign Up</button>
+            <mat-form-field appearance="fill">
+                <mat-label>Your phone number</mat-label>
+                <input matInput type="phone" ngModel id="phone" name="phone" placeholder="phone number" required>
+                <i matSuffix class="bi bi-telephone-fill"></i>
+            </mat-form-field>
+        </div>
+     
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose password</mat-label>
+                <input matInput type="password" ngModel id="password" name="password" placeholder="enter your password" required>
+                <i matSuffix class="bi bi-key-fill"></i>
+                <mat-hint><a href="">password requirements</a></mat-hint>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <button class="btn-primary" type="submit"><a href="">Sign Up</a></button>
         </div>
     </form>
 
-    <p *ngIf="error">{{error}}</p>
+    <div *ngIf="error" class="error">
+        <p>{{error}}</p>
+    </div>
+    
 </div>
 
 

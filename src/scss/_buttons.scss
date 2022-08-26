@@ -1,31 +1,39 @@
 button {
     border-radius: 2px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    a {
+        color: $dark-brown;
+        text-decoration: none;
+        font-size: $font-size-xs;
+        text-transform: lowercase;
+    }
+    
 }
 
 .btn-primary {
-    font-size: $font-size-s;
-    font-weight: bold;
     border: none;
-    background-color: $light-almond;
-    padding: 0.5rem 1rem;  
-    /* &:hover {
-        box-shadow: 3px 5px 8px 1px $blue-grey;  
-    } */
+    background-color: $brown;
+    &:hover {
+        box-shadow: 2px 2px 4px 1px $blue-grey;  
+    }
     &:active {
         transform: translateY(0.5px);
-        background-color: $dark-almond;
     }
-    a {
-        color: $dark-brown;
-        font-size: 1rem;
-        text-transform: lowercase;
-        text-decoration: none;
-    } 
+    a, a:hover {
+        color: $light-almond;
+    }
+}
+
+.btn-secondary {
+    border: 2px solid $dark-brown;
+    background-color: transparent;
 }
 
 .nav-btn {
     background-color: $sage;
     border: transparent;
+    padding: 0;
     i {
         font-size: $font-size-s;
     }
@@ -35,11 +43,15 @@ button {
 }
 
 .icon-btn {
-    font-size: $font-size-s;
     border: none;
     border-radius: 100%;
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 0.5rem;
     background-color: $mint;
+    padding: 0;
+    a {
+        color: $blue-grey;
+        font-size: $font-size-s;
+    }
 }

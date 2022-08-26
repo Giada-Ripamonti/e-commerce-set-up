@@ -1,5 +1,10 @@
 @import '/src/scss/variables';
 
+mat-sidenav-container {
+    position: sticky;
+    top: 0;
+}
+
 mat-toolbar {
     background-color: $sage !important;
     display: flex;
@@ -15,13 +20,13 @@ mat-sidenav {
     }
 }
 
-button {
-    width: 1rem;
-}
-
 #logo {
+    position: absolute;
+    left: 45vw;
     display: flex;
     align-items: center;
+    width: fit-content;
+    margin: 0 auto;
     img {
         width: 2rem;
         height: 2rem;
