@@ -1,27 +1,12 @@
 {
   "users": [
     {
-      "email": "ciao@gmail.com",
-      "password": "$2a$10$gen41Elt7EI0eV2ALu228eBkaWo7ePOzB4t8e5X7k0M3scsRkPDoi",
-      "firstname": "Prova",
-      "lastname": "Prova",
-      "id": 1
-    },
-    {
       "email": "admin@gmail.com",
       "password": "$2a$10$uAxPCwgzlwtWhEdDmEYFJOO6z2LF3qYofR6/sOP.p7ePQ6g9tSBHG",
       "firstname": "Giada",
       "lastname": "Ripamonti",
       "phone": "1234567890",
       "id": 2
-    },
-    {
-      "email": "giadaripa@hotmail.it",
-      "password": "$2a$10$GMjs7a3hvXZJTij3i5Y4jO0D1cmFQjVU/ZKRLA3GPnQqncJqRil2.",
-      "firstname": "Giada",
-      "lastname": "Ripamonti",
-      "phone": "000000000",
-      "id": 3
     }
   ],
   "products": [
@@ -37,23 +22,27 @@
       ],
       "productName": "Long dress",
       "price": 50.5,
-      "colours": [
-        "orange",
-        "green",
-        "yellow"
-      ],
+      "colours": [],
       "sizes": [
         {
           "size": "XS",
-          "n": 3
+          "n": 3,
+          "colour": "yellow"       
         },
         {
           "size": "S",
-          "n": 7
+          "n": 2,
+          "colour": "orange"       
+        },
+        {
+          "size": "M",
+          "n": 4,
+          "colour": "black"       
         },
         {
           "size": "L",
-          "n": 1
+          "n": 7,
+          "colour": "black" 
         }
       ],
       "qty": 0,
@@ -71,23 +60,27 @@
       ],
       "productName": "Short dress",
       "price": 30.5,
-      "colours": [
-        "black",
-        "pink",
-        "cream"
-      ],
+      "colours": [],
       "sizes": [
         {
-          "size": "XS",
-          "n": 3
+          "size": "S",
+          "n": 2,
+          "colour": "orange"       
         },
         {
-          "size": "S",
-          "n": 7
+          "size": "M",
+          "n": 7,
+          "colour": "black" 
         },
         {
           "size": "L",
-          "n": 1
+          "n": 1,
+          "colour": "white"       
+        },
+        {
+          "size": "XL",
+          "n": 2,
+          "colour": "orange"       
         }
       ],
       "qty": 0,
@@ -105,23 +98,27 @@
       ],
       "productName": "Middle dress",
       "price": 50.5,
-      "colours": [
-        "orange",
-        "green",
-        "yellow"
-      ],
+      "colours": [],
       "sizes": [
         {
           "size": "XS",
-          "n": 3
+          "n": 3,
+          "colour": "yellow"       
         },
         {
           "size": "S",
-          "n": 7
+          "n": 1,
+          "colour": "orange"       
         },
         {
-          "size": "L",
-          "n": 1
+          "size": "M",
+          "n": 8,
+          "colour": "orange"       
+        },
+        {
+          "size": "XL",
+          "n": 7,
+          "colour": "black" 
         }
       ],
       "qty": 0,
@@ -139,23 +136,22 @@
       ],
       "productName": "Long skirt",
       "price": 30.5,
-      "colours": [
-        "white",
-        "green",
-        "orange"
-      ],
+      "colours": [],
       "sizes": [
         {
-          "size": "S",
-          "n": 3
+          "size": "XS",
+          "n": 3,
+          "colour": "yellow"       
         },
         {
-          "size": "M",
-          "n": 7
+          "size": "S",
+          "n": 2,
+          "colour": "orange"       
         },
         {
           "size": "XL",
-          "n": 1
+          "n": 7,
+          "colour": "black" 
         }
       ],
       "qty": 0,
@@ -173,23 +169,22 @@
       ],
       "productName": "T-shirt",
       "price": 10,
-      "colours": [
-        "blue",
-        "white",
-        "cream"
-      ],
+      "colours": [],
       "sizes": [
         {
           "size": "XS",
-          "n": 1
+          "n": 3,
+          "colour": "yellow"       
         },
         {
-          "size": "L",
-          "n": 7
+          "size": "M",
+          "n": 2,
+          "colour": "pink"       
         },
         {
-          "size": "XL",
-          "n": 1
+          "size": "XS",
+          "n": 7,
+          "colour": "black" 
         }
       ],
       "qty": 0,
@@ -207,23 +202,17 @@
       ],
       "productName": "summer dress",
       "price": 10,
-      "colours": [
-        "blue",
-        "white",
-        "cream"
-      ],
+      "colours": [],
       "sizes": [
         {
           "size": "XS",
-          "n": 1
+          "n": 3,
+          "colour": "yellow"       
         },
         {
-          "size": "L",
-          "n": 7
-        },
-        {
-          "size": "XL",
-          "n": 1
+          "size": "S",
+          "n": 7,
+          "colour": "black" 
         }
       ],
       "qty": 0,

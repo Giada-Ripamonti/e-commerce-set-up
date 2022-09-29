@@ -9,6 +9,7 @@ import { ProductsService } from 'src/app/core/products.service';
   styleUrls: ['./product-description.component.scss']
 })
 export class ProductDescriptionComponent implements OnInit {
+  panelOpenState = false;
 
   @Input() product!: IProduct;
 

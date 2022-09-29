@@ -1,0 +1,12 @@
+@import '/src/scss/variables';
+@import '/src/scss/mixins';
+
+mat-expansion-panel {
+    background-color: transparent !important;
+    border-bottom: 2px solid $blue-grey;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    mat-expansion-panel-header, mat-panel-title {
+        background-color: transparent !important;
+    }
+}

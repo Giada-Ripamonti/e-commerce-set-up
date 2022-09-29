@@ -7,6 +7,7 @@ import { ProductDetailCardComponent } from './product-detail-card/product-detail
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductDescriptionComponent } from './product-description/product-descr
   ],
   imports: [
     CommonModule,
-    ProductDetailRoutingModule
+    ProductDetailRoutingModule,
+    MatExpansionModule
   ]
 })
 export class ProductDetailModule { }

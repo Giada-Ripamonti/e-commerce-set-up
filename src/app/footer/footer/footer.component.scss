@@ -55,7 +55,8 @@
     align-items: center;
     margin: 2rem 1rem;
     @include screen-min($screen-m){
-        flex-direction: column;}
+        flex-direction: column;
+    }
     #badge {
         background-color: $light-almond;
         border-radius: 10px;
@@ -67,8 +68,9 @@
     }
     div:last-child {
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         i {
-            margin-left: 0.8rem;
             font-size: $font-size-m;
         }
     }

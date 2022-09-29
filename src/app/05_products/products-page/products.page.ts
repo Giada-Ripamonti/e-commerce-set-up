@@ -20,9 +20,16 @@ export class ProductsPage implements OnInit {
       (resp:any) => {
         this.prodType = resp.type;
         this.products.getAllProd(resp.type).subscribe(
-          prod => this.prodList = prod)
+          prod => {
+            this.prodList = prod;
+            this.prodList = this.prodList.map( (p) => {
+              let colours = p.sizes.map( (s:any) => s.colour)
+              p.colours = [...new Set(colours)];
+              return p
+             })
+          }
+        )
       }
     )    
   }
-
 }

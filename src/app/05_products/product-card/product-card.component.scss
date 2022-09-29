@@ -3,10 +3,13 @@
 
 .card {
     padding: 1.5rem;
-    margin: 2.5rem 0;
+    margin: 2.5rem auto;
+    width: 95%;
     background-color: $light-almond;
     img {
         margin: 1rem auto;
+        width: 95%;
+        height: auto;
     }
     button {
         width: 100%;

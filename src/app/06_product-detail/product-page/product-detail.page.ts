@@ -17,7 +17,11 @@ export class ProductDetailPage implements OnInit {
   ngOnInit(): void {
     this.routes.params.subscribe(param => {  
       this.products.getID(param['id']).subscribe(
-        prod => this.product = prod
+        prod => {
+          this.product = prod
+            let sizes = this.product.sizes.map( (s:any) => s.size)
+            console.log(sizes);
+        }
       )
     })
   }

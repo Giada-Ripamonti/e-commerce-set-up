@@ -12,10 +12,12 @@ export class ProductDetailCardComponent implements OnInit {
 
   @Input() product!: IProduct;
 
+  sizes:string[] = [];
+
   constructor(private products: ProductsService, private routes: ActivatedRoute) { }
 
   ngOnInit(): void {
-
+    
   }
 
 }
