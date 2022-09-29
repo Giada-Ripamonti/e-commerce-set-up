@@ -7,6 +7,14 @@
       "lastname": "Ripamonti",
       "phone": "1234567890",
       "id": 2
+    },
+    {
+      "email": "ripamontigiada@gmail.com",
+      "password": "$2a$10$e7cD6rWxwLHYXGDpScMtRewI9KiR8XRdqbZgVT5FiGCL1QJTs9Unq",
+      "firstname": "Giada",
+      "lastname": "Ripamonti",
+      "phone": "3396367678",
+      "id": 3
     }
   ],
   "products": [
@@ -27,22 +35,17 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"       
+          "colour": "yellow"
         },
         {
           "size": "S",
           "n": 2,
-          "colour": "orange"       
+          "colour": "orange"
         },
         {
           "size": "M",
           "n": 4,
-          "colour": "black"       
-        },
-        {
-          "size": "L",
-          "n": 7,
-          "colour": "black" 
+          "colour": "black"
         }
       ],
       "qty": 0,
@@ -65,22 +68,22 @@
         {
           "size": "S",
           "n": 2,
-          "colour": "orange"       
+          "colour": "orange"
         },
         {
           "size": "M",
           "n": 7,
-          "colour": "black" 
+          "colour": "black"
         },
         {
           "size": "L",
           "n": 1,
-          "colour": "white"       
+          "colour": "white"
         },
         {
           "size": "XL",
           "n": 2,
-          "colour": "orange"       
+          "colour": "orange"
         }
       ],
       "qty": 0,
@@ -103,22 +106,22 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"       
+          "colour": "yellow"
         },
         {
           "size": "S",
           "n": 1,
-          "colour": "orange"       
+          "colour": "orange"
         },
         {
           "size": "M",
           "n": 8,
-          "colour": "orange"       
+          "colour": "orange"
         },
         {
           "size": "XL",
           "n": 7,
-          "colour": "black" 
+          "colour": "black"
         }
       ],
       "qty": 0,
@@ -141,17 +144,17 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"       
+          "colour": "yellow"
         },
         {
           "size": "S",
           "n": 2,
-          "colour": "orange"       
+          "colour": "orange"
         },
         {
           "size": "XL",
           "n": 7,
-          "colour": "black" 
+          "colour": "black"
         }
       ],
       "qty": 0,
@@ -174,17 +177,17 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"       
+          "colour": "yellow"
         },
         {
           "size": "M",
           "n": 2,
-          "colour": "pink"       
+          "colour": "pink"
         },
         {
           "size": "XS",
           "n": 7,
-          "colour": "black" 
+          "colour": "black"
         }
       ],
       "qty": 0,
@@ -207,12 +210,12 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"       
+          "colour": "yellow"
         },
         {
           "size": "S",
           "n": 7,
-          "colour": "black" 
+          "colour": "black"
         }
       ],
       "qty": 0,

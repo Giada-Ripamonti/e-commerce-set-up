@@ -1,45 +1,51 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@import '~bootstrap-icons/font/bootstrap-icons.css';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
-@import 'scss/variables';
-@import 'scss/buttons';
-@import 'scss/mixins';
-@import 'scss/forms';
+@import "scss/variables";
+@import "scss/buttons";
+@import "scss/mixins";
+@import "scss/forms";
 
 * {
-    box-sizing: border-box;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
-    background-color: $mint;
-    font-family: $font-sans-serif;
-    color: $dark-grey;
-    margin: 0;
-    padding: 0;
+  background-color: $mint;
+  color: $dark-grey;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-serif;
-    text-transform: lowercase;
-    margin: 0.5rem auto;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-serif;
+  text-transform: lowercase;
+  margin: 0.5rem auto;
+  padding: 0;
 }
 
 a {
-    color: $dark-grey;
-    &:hover {
-        color: $dark-brown;
-    }
+  font-family: $font-sans-serif !important;
+  color: $dark-grey;
+  &:hover {
+    color: $dark-brown;
+  }
 }
 
 p {
-    font-size: $font-size-s;
-    margin: 1rem;
-    padding: 0;
+  font-family: $font-sans-serif !important;
+  font-size: $font-size-s;
+  margin: 1rem;
+  padding: 0;
 }

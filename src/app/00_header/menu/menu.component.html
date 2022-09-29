@@ -1,26 +1,16 @@
 <mat-nav-list>
     
-    <mat-accordion>
-        <mat-expansion-panel hideToggle>
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    <a mat-list-item>Shop</a>
-                </mat-panel-title>  
-            </mat-expansion-panel-header>
-
-            <div class="subMenu">
-                <p><a mat-menu-item href="#" [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a></p>
-                <p><a mat-menu-item href="#" [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a></p>
-                <p><a mat-menu-item href="#" [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a></p>         
-            </div>
-                
-        </mat-expansion-panel>
-    </mat-accordion>
+    <p>SHOP</p>
+    <div class="subMenu">
+        <p><a mat-list-item [routerLink]="['/products', 'type', 'dresses']" routerLinkActive="router-link-active" >dresses</a></p>
+        <p><a mat-list-item [routerLink]="['/products', 'type', 'bottoms']" routerLinkActive="router-link-active">bottoms</a></p>
+        <p><a mat-list-item [routerLink]="['/products', 'type', 'tees']" routerLinkActive="router-link-active">tees & tops</a></p>         
+    </div>
 
     <div>
-        <a mat-list-item href="#">Sustainability</a>  
-        <a mat-list-item href="#">About</a>   
-        <a mat-list-item href="#" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+        <a mat-list-item href="#">SUSTAINABILITY</a>  
+        <a mat-list-item href="#">ABOUT</a>   
+        <a mat-list-item [routerLink]="['/home']" routerLinkActive="router-link-active" >HOME</a>
     </div>
     
 </mat-nav-list>

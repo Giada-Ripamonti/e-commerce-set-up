@@ -1,0 +1,25 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+#banner {
+    margin-top: 2rem;
+    background-color: $light-almond;
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid $dark-almond;
+    outline-offset: 5px;
+    @include screen-min($screen-l){
+        flex-direction: row;}
+    div {
+        padding:2rem;
+        width: 90%;
+        margin: auto;
+        h1 {
+            margin: 2rem auto;
+        }
+    }
+}
+
+div {
+    margin: 6rem auto;
+}

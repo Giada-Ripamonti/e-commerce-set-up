@@ -1,46 +1,33 @@
-@import '/src/scss/variables';
-@import '/src/scss/mixins';
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+p {
+    font-size: 1.5rem;
+}
 
 a {
+    font-family: $font-sans-serif !important;
     text-decoration: none;
     font-size: $font-size-m !important;
     @include screen-min($screen-m){
         font-size: $font-size-s !important;}
     &:hover, .router-link-active {
         color: $light-almond;
-        text-decoration: underline;
         font-size: 180% !important;
         @include screen-min($screen-m){
             font-size: 120% !important;}
     }
 }
 
-mat-nav-list {
-    div:last-child{
-        margin-top: 1.5rem;
-    }
-}
-
-mat-expansion-panel {
-    background-color: $sage !important;
-    box-shadow: none !important;
-    padding: 0px !important;
-    border-radius: 0% !important;
-    border-bottom: 2px solid $blue-grey;
-    mat-expansion-panel-header, mat-panel-title {
-        padding: 0px !important;
-        margin: 0px !important;
-        background-color: transparent !important;
-    }
-    .subMenu{
-        margin-bottom: 1.5rem;
-        p {
-            line-height: 1em;
-            @include screen-min($screen-s){
-                line-height: 1.2em;}
-            a:hover {
-                background-color: transparent !important;
-            } 
-        }
+.subMenu{
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $dark-grey;
+    p {
+        line-height: 1em;
+        @include screen-min($screen-s){
+            line-height: 1.2em;}
+        a:hover {
+            background-color: transparent !important;
+        } 
     }
 }

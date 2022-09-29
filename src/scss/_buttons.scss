@@ -1,5 +1,5 @@
 button {
-    border-radius: 2px;
+    border-radius: 1px;
     font-weight: bold;
     padding: 0.5rem 1rem;
     font-size: $font-size-s;
@@ -20,11 +20,23 @@ button {
 }
 
 .btn-secondary {
-    border: 2px solid $dark-brown;
+    border: 1px solid $dark-brown;
     background-color: transparent;
     color: $dark-brown;
     &:hover {
         background-color: $dark-almond;  
+    }
+    &:active {
+        transform: scale(99%) ;
+    }
+}
+
+.btn-green{
+    border: 1px solid $dark-grey;
+    background-color: $blue-grey;
+    color: $light-almond;
+    &:hover {
+        background-color: $dark-sage;
     }
     &:active {
         transform: scale(99%) ;
