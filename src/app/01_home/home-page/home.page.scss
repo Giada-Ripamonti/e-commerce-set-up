@@ -1,25 +1,94 @@
-@import 'src/scss/variables';
-@import 'src/scss/mixins';
+@import "src/scss/variables";
+@import "src/scss/mixins";
 
 #banner {
-    margin-top: 2rem;
-    background-color: $light-almond;
-    display: flex;
-    flex-direction: column;
-    outline: 2px solid $dark-almond;
-    outline-offset: 5px;
-    @include screen-min($screen-l){
-        flex-direction: row;}
-    div {
-        padding:2rem;
-        width: 90%;
-        margin: auto;
-        h1 {
-            margin: 2rem auto;
-        }
+  margin-top: 2rem;
+  background-color: $light-almond;
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid $dark-almond;
+  outline-offset: 5px;
+  @include screen-min($screen-l) {
+    flex-direction: row;
+  }
+  div {
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    h1 {
+      margin: 1rem auto;
     }
+    button {
+      margin: 3rem auto;
+    }
+  }
 }
 
 div {
-    margin: 6rem auto;
+  margin: 8rem auto;
+}
+
+#bestsellers {
+  div {
+    text-align: center;
+    margin: 1rem auto;
+    @include screen-min($screen-m) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .outlined {
+      margin: 2rem auto;
+      outline: 2px solid $blue-grey;
+      outline-offset: 5px;
+      max-width: 100%;
+      min-height: fit-content;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include screen-min($screen-m) {
+        width: 30%;
+      }
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      h3 {
+        margin-top: 2rem;
+      }
+      button {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+#sustainability {
+  width: 100% !important;
+  background-color: $dark-mint;
+  margin-bottom: 0;
+  @include screen-min($screen-l) {
+    display: flex;
+    max-height: fit-content;
+  }
+  div {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    @include screen-min($screen-l) {
+        margin: 0 auto;
+      }
+    h2 {
+        margin: 1rem auto;
+    }
+    button {
+        margin: 2rem auto;
+    }
+  }
+  img {
+    width: 100%;
+    @include screen-min($screen-l) {
+        height: 100%;
+        width:auto;
+      }
+  }
 }

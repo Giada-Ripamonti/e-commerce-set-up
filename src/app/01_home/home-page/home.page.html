@@ -1,16 +1,38 @@
 <div id="banner">
-  <img [src]="path" alt="" />
+  <img [src]="bannerPath" alt="" />
   <div>
     <h1>your eco-friendly fashion website</h1>
+    <h2>be the change!</h2>
     <button class="btn-green">learn more</button>
   </div>
 </div>
 
-<div>
+<div id="bestsellers">
   <h2>★ our bestsellers</h2>
-  <button>shop now</button>
+  <div>
+    <div class="outlined">
+      <img [src]="imgList[0]" alt="" />
+      <h3>Bestseller</h3>
+      <button class="btn-primary">shop now</button>
+    </div>
+    <div class="outlined">
+      <img [src]="imgList[1]" alt="" />
+      <h3>Bestseller</h3>
+      <button class="btn-primary">shop now</button>
+    </div>
+    <div class="outlined">
+      <img [src]="imgList[2]" alt="" />
+      <h3>Bestseller</h3>
+      <button class="btn-primary">shop now</button>
+    </div>
+  </div>
 </div>
 
-<div>
-  <h2>♥ what they say</h2>
+<div id="sustainability">
+  <div>
+    <h2>we love the planet ♥</h2>
+    <h3>learn more about our commitment in sustainability</h3>
+    <button class="btn-green">discover</button>
+  </div>
+  <img [src]="planetbPath" alt="" />
 </div>
