@@ -1,10 +1,12 @@
-<h1>{{userName}}</h1>
+<div id="profile">
+  <h1>{{userName}}</h1>
+  <p><i class="bi bi-emoji-smile"></i></p>
 
-<app-user-detail></app-user-detail>
+  <app-user-detail></app-user-detail>
 
-<app-custom-size></app-custom-size>
-
-<div>
-    <button type="button" (click)="logout()"><a href="#">Logout</a></button>
-    <button type="button">Help!</button>
+  <div>
+    <button class="btn-green log-btn" type="button" (click)="logout()">
+      <a href="#">Logout <i class="bi bi-box-arrow-right"></i></a>
+    </button>
+  </div>
 </div>

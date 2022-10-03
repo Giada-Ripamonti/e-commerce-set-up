@@ -5,13 +5,11 @@ import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfilePage} from './profile-page/profile.page';
 import { HttpClientModule } from '@angular/common/http';
 import { UserDetailComponent } from './user-detail/user-detail.component';
-import { CustomSizeComponent } from './custom-size/custom-size.component';
 
 @NgModule({
   declarations: [
     ProfilePage,
-    UserDetailComponent,
-    CustomSizeComponent
+    UserDetailComponent
   ],
   imports: [
     CommonModule,

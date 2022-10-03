@@ -15,7 +15,7 @@ export class ProfilePage implements OnInit {
   ngOnInit(): void {
     this.authService.authSubject.subscribe(val => {
       if (val !== null) {
-        this.userName = `Welcome ${val?.user.firstname}! =)`
+        this.userName = `Welcome ${val?.user.firstname}! `
       } else {
         this.userName = undefined
       }

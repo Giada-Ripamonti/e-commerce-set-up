@@ -1,0 +1,10 @@
+@import "/src/scss/variables";
+@import "/src/scss/mixins";
+
+div {
+    width: 90%;
+    margin: 0 auto;
+    @include screen-min($screen-l) {
+        width: 70%;
+    }
+}

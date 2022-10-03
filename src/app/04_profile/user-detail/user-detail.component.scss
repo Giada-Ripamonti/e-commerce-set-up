@@ -1,0 +1,10 @@
+div {
+  margin: 3rem auto;
+  p {
+    text-transform: lowercase;
+  }
+  span {
+    text-transform: initial;
+    font-weight: bold;
+  }
+}

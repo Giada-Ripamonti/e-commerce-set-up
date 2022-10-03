@@ -1,1 +1,10 @@
-/*# sourceMappingURL=user-detail.component.css.map */
+div {
+  margin: 3rem auto;
+}
+div p {
+  text-transform: lowercase;
+}
+div span {
+  text-transform: initial;
+  font-weight: bold;
+}/*# sourceMappingURL=user-detail.component.css.map */

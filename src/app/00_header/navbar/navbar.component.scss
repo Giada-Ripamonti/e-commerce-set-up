@@ -11,6 +11,7 @@ mat-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: fit-content;
 }
 
 mat-sidenav {
@@ -29,17 +30,14 @@ mat-sidenav {
 
 #logo {
   position: absolute;
-  left: 45vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: flex;
   align-items: center;
   width: fit-content;
-  margin: 0 auto;
-  @include screen-min($screen-s) {
-    left: 40vw;
-  }
-  @include screen-min($screen-m) {
-    left: 45vw;
-  }
   a {
     h1 {
       display: none;

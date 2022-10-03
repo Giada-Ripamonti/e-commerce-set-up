@@ -1,9 +1,9 @@
 <div id="panel">
     <div id="login" *ngIf="!logged">
-        <button class="btn-green" type="button" [routerLink]="['/login']"><a>login</a><i class="bi bi-box-arrow-in-right"></i></button>
+        <button class="btn-green log-btn" type="button" [routerLink]="['/login']"><a>login</a><i class="bi bi-box-arrow-in-right"></i></button>
     </div>
 
-    <button class="icon-btn" type="button"><a href="#" [routerLink]="['/profile']" routerLinkActive="router-link-active" ><i class="bi bi-person-fill"></i></a></button>
+    <button *ngIf="logged" class="icon-btn" type="button"><a href="#" [routerLink]="['/profile']" routerLinkActive="router-link-active" ><i class="bi bi-person-fill"></i></a></button>
     
     <button class="icon-btn" type="button"><a href="#"><i class="bi bi-bag-fill"></i></a></button>
 </div>

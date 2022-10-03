@@ -1,24 +1,58 @@
-@import '/src/scss/variables';
-@import '/src/scss/mixins';
+@import "/src/scss/variables";
+@import "/src/scss/mixins";
 
 .card-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .price {
-        font-weight: bold;
-        color: $blue-grey;
-        font-size: $font-size-m;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .price {
+    font-weight: bold;
+    color: $blue-grey;
+    font-size: $font-size-m;
+  }
 }
 
 button {
-    width: 100%;
-    margin: 2rem auto !important;
-    @include screen-min($screen-m){
-        width: fit-content;}
+  width: 100%;
+  margin: 2rem auto !important;
+  @include screen-min($screen-m) {
+    width: initial;
+  }
 }
 
 .sizes {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  @include screen-min($screen-m) {
+    justify-content: center;
+    div:nth-child(even) {
+      margin: 0 1rem;
+    }
+  }
+  div {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3px solid $dark-grey;
+    width: 2.5rem;
+    height: 2.5rem;
+    input {
+      opacity: 0;
+      position: relative;
+      margin: 0;
+      left: 1rem;
+    width: 2.5rem;
+     height: 2.5rem; 
+      cursor: pointer;
+      &:checked ~ label {
+       font-weight: bold;
+       font-size: 150%;
+      }
+    }
+    label {
+        margin-right: 0.8rem;
+      }
+  }
 }

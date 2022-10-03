@@ -1,0 +1,31 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+
+#profile {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-mint;
+  padding: 1rem;
+  @include screen-min($screen-m){
+    width: 70%;
+    padding: 3rem;
+  }
+  @include screen-min($screen-l){
+    width: 50%;
+  }
+  p {
+    text-align: center;
+    font-size: $font-size-l;
+  }
+  h1 {
+    text-align: center;
+  }
+  div:last-child {
+    align-self: flex-end;
+    button {
+        width:8rem;
+    }
+  }
+}

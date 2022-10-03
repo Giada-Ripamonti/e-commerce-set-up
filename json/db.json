@@ -5,8 +5,16 @@
       "password": "$2a$10$uAxPCwgzlwtWhEdDmEYFJOO6z2LF3qYofR6/sOP.p7ePQ6g9tSBHG",
       "firstname": "Giada",
       "lastname": "Ripamonti",
-      "phone": "1234567890",
+      "phone": "1234",
       "id": 2
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$FwKM9Y9v8tp0yf4HOpX4yeWZmQGYDoX6AX7QItp3lvdbw60KBjPLm",
+      "firstname": "Giada",
+      "lastname": "Ripamonti",
+      "phone": "3396367678",
+      "id": 3
     }
   ],
   "products": [

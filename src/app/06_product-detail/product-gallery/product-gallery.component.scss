@@ -1,7 +1,14 @@
-a {
-    div{
-        background-color: red;
-        width: 12px;
-        height: 3px; 
+@import '/src/scss/variables';
+@import '/src/scss/mixins';
+
+.imgs {
+    width: 100%;
+    height: 300px;
+    background-color: $dark-mint;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include screen-min($screen-l) {
+      height: 470px;
     }
-}
+  }

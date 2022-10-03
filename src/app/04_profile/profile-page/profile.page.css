@@ -1,1 +1,12 @@
-/*# sourceMappingURL=profile.page.css.map */
+#profile {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#profile h1 {
+  text-align: center;
+}
+#profile div:last-child {
+  align-self: flex-end;
+}/*# sourceMappingURL=profile.page.css.map */
