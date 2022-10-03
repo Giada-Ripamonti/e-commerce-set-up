@@ -13,8 +13,12 @@
     .icon-btn {
         background-color: transparent;
         margin: 1rem;
+        line-height: 1.8rem;
         &:hover {
             border: 1px solid $blue-grey;
+        }
+        a {
+            font-size: $font-size-l;
         }
     }
     h1, p {

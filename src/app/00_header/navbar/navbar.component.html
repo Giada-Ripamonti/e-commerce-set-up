@@ -15,8 +15,8 @@
          <button class="nav-btn" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.open()"><i class="bi bi-list"></i></button>
          
          <div id="logo">
-            <img src="./assets/imgs/001-leaves.svg" alt="brand-logo">
-            <a href="#" [routerLink]="['/home']"><h1>Brand</h1></a> 
+            <a [routerLink]="['/home']"><img src="./assets/imgs/001-leaves.svg" alt="brand-logo"></a>
+            <a [routerLink]="['/home']"><h1>Brand</h1></a> 
          </div>
          
          <app-panel></app-panel>               

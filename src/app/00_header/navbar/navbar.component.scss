@@ -1,60 +1,67 @@
-@import '/src/scss/variables';
-@import '/src/scss/mixins';
+@import "/src/scss/variables";
+@import "/src/scss/mixins";
 
 mat-sidenav-container {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 mat-toolbar {
-    background-color: $sage !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: $sage !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 mat-sidenav {
-    background-color: $sage !important;
-    width: 100%;
-    @include screen-min($screen-s){
-        width: 45%;}
-    @include screen-min($screen-m){
-        width: 30%;}
-    button {
-        margin: 1rem;
-    }
+  background-color: $sage !important;
+  width: 100%;
+  @include screen-min($screen-s) {
+    width: 45%;
+  }
+  @include screen-min($screen-m) {
+    width: 30%;
+  }
+  button {
+    margin: 1rem;
+  }
 }
 
 #logo {
-    position: absolute;
+  position: absolute;
+  left: 45vw;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  @include screen-min($screen-s) {
+    left: 40vw;
+  }
+  @include screen-min($screen-m) {
     left: 45vw;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: 0 auto;
-    @include screen-min($screen-s){
-        left: 40vw;}
-    @include screen-min($screen-m){
-        left: 45vw;}
-    a {
-        display: none;
-        @include screen-min($screen-s){
-            display: inline;}
+  }
+  a {
+    h1 {
+      display: none;
+      @include screen-min($screen-s) {
+        display: inline;
+      }
     }
-    img {
-        width: 2rem;
-        height: 2rem;
-    }
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
 
-    a{
-        color: black;
-        text-decoration: none;
-        &:hover {
-            color:black
-        }
-        h1 {
-            font-size: 2rem;
-            margin-left: 0.2em;
-        }
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: black;
     }
+    h1 {
+      font-size: 2rem;
+      margin-left: 0.2em;
+    }
+  }
 }

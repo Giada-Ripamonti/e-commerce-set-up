@@ -13,11 +13,8 @@ export class ProductCardComponent implements OnInit {
 
   @Input() prodList!: IProduct[];
 
-  colours:string[] = [];
-
   constructor(private products:ProductsService, private router : ActivatedRoute) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {    
   }
 }

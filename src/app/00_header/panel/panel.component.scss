@@ -1,29 +1,35 @@
-@import '/src/scss/variables';
-@import '/src/scss/mixins';
+@import "/src/scss/variables";
+@import "/src/scss/mixins";
 
 #panel {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #login {
-    display: none;
-    @include screen-min($screen-m){
+  display: none;
+  @include screen-min($screen-m) {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  button {
+    width: 6rem;
+    a {
+      color: $light-almond;
+      transition: all .3s ease-out;
+      display: inline-block;
+    }
+    i {
+      display: none;
+    }
+    &:hover {
+      box-shadow: none;
+      a {
+        transform: translateX(-5px);
+      }
+      i {
         display: inline;
-        margin-right: 0.5rem;}
-    button {
-        background-color: $light-almond;
-        width: 6rem;
-        a {
-          color: $dark-brown;
-        }
-        i{
-            display: none;
-        }
-    &:hover{
-        i{
-            display: inline;
-        }
+      }
     }
-    }
+  }
 }

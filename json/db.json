@@ -7,14 +7,6 @@
       "lastname": "Ripamonti",
       "phone": "1234567890",
       "id": 2
-    },
-    {
-      "email": "ripamontigiada@gmail.com",
-      "password": "$2a$10$e7cD6rWxwLHYXGDpScMtRewI9KiR8XRdqbZgVT5FiGCL1QJTs9Unq",
-      "firstname": "Giada",
-      "lastname": "Ripamonti",
-      "phone": "3396367678",
-      "id": 3
     }
   ],
   "products": [
@@ -22,11 +14,9 @@
       "id": 1,
       "type": "dresses",
       "slug": "dresses",
-      "thumbnail": "img/dress1.png",
+      "thumbnail": "dress1.jpg",
       "productImgs": [
-        "img/dress1.png",
-        "img/dress1.png",
-        "img/dress1.png"
+        "dress1.jpg"
       ],
       "productName": "Long dress",
       "price": 50.5,
@@ -35,17 +25,17 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"
+          "colour": "#92c3ba"
         },
         {
           "size": "S",
           "n": 2,
-          "colour": "orange"
+          "colour": "#a97a44"
         },
         {
           "size": "M",
           "n": 4,
-          "colour": "black"
+          "colour": "#38332e"
         }
       ],
       "qty": 0,
@@ -55,11 +45,9 @@
       "id": 2,
       "type": "dresses",
       "slug": "dresses",
-      "thumbnail": "img/dress2.png",
+      "thumbnail": "dress2.jpg",
       "productImgs": [
-        "img/dress1.png",
-        "img/dress1.png",
-        "img/dress1.png"
+        "dress2.jpg"
       ],
       "productName": "Short dress",
       "price": 30.5,
@@ -68,22 +56,22 @@
         {
           "size": "S",
           "n": 2,
-          "colour": "orange"
+          "colour": "#a97a44"
         },
         {
           "size": "M",
           "n": 7,
-          "colour": "black"
+          "colour": "#38332e"
         },
         {
           "size": "L",
           "n": 1,
-          "colour": "white"
+          "colour": "#ffff"
         },
         {
           "size": "XL",
           "n": 2,
-          "colour": "orange"
+          "colour": "#a97a44"
         }
       ],
       "qty": 0,
@@ -93,11 +81,9 @@
       "id": 3,
       "type": "dresses",
       "slug": "dresses",
-      "thumbnail": "img/dress1.png",
+      "thumbnail": "dress3.jpg",
       "productImgs": [
-        "img/dress1.png",
-        "img/dress1.png",
-        "img/dress1.png"
+        "dress3.jpg"
       ],
       "productName": "Middle dress",
       "price": 50.5,
@@ -106,22 +92,22 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"
+          "colour": "#92c3ba"
         },
         {
           "size": "S",
           "n": 1,
-          "colour": "orange"
+          "colour": "#a97a44"
         },
         {
           "size": "M",
           "n": 8,
-          "colour": "orange"
+          "colour": "#a97a44"
         },
         {
           "size": "XL",
           "n": 7,
-          "colour": "black"
+          "colour": "#38332e"
         }
       ],
       "qty": 0,
@@ -131,11 +117,9 @@
       "id": 4,
       "type": "bottoms",
       "slug": "bottoms",
-      "thumbnail": "img/dress2.png",
+      "thumbnail": "dress4.jpg",
       "productImgs": [
-        "img/dress1.png",
-        "img/dress1.png",
-        "img/dress1.png"
+        "dress4.jpg"
       ],
       "productName": "Long skirt",
       "price": 30.5,
@@ -144,17 +128,17 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"
+          "colour": "#92c3ba"
         },
         {
           "size": "S",
           "n": 2,
-          "colour": "orange"
+          "colour": "#a97a44"
         },
         {
           "size": "XL",
           "n": 7,
-          "colour": "black"
+          "colour": "#38332e"
         }
       ],
       "qty": 0,
@@ -164,11 +148,11 @@
       "id": 5,
       "type": "tees",
       "slug": "tees-tops",
-      "thumbnail": "img/dress2.png",
+      "thumbnail": "img/dress2.jpg",
       "productImgs": [
-        "img/dress1.png",
-        "img/dress1.png",
-        "img/dress1.png"
+        "img/dress1.jpg",
+        "img/dress1.jpg",
+        "img/dress1.jpg"
       ],
       "productName": "T-shirt",
       "price": 10,
@@ -177,7 +161,7 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"
+          "colour": "#92c3ba"
         },
         {
           "size": "M",
@@ -187,7 +171,7 @@
         {
           "size": "XS",
           "n": 7,
-          "colour": "black"
+          "colour": "#38332e"
         }
       ],
       "qty": 0,
@@ -197,11 +181,9 @@
       "id": 6,
       "type": "dresses",
       "slug": "dresses",
-      "thumbnail": "img/dress2.png",
+      "thumbnail": "dress4.jpg",
       "productImgs": [
-        "img/dress1.png",
-        "img/dress1.png",
-        "img/dress1.png"
+        "dress4.jpg"
       ],
       "productName": "summer dress",
       "price": 10,
@@ -210,12 +192,17 @@
         {
           "size": "XS",
           "n": 3,
-          "colour": "yellow"
+          "colour": "#92c3ba"
         },
         {
           "size": "S",
           "n": 7,
-          "colour": "black"
+          "colour": "#38332e"
+        },
+        {
+          "size": "M",
+          "n": 7,
+          "colour": "#a97a44"
         }
       ],
       "qty": 0,

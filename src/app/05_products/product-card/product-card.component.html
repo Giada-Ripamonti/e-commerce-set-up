@@ -1,7 +1,20 @@
 <div class="card" *ngFor="let product of prodList">
-    <img [src]="product.thumbnail" [alt]="product.productName" loading="lazy">
-    <h2>{{product.productName}}</h2>
-    <p>{{product.price}} €</p>
-    <div>{{product.colours}}</div>
-    <button class="btn-primary" type="button" [routerLink]="['/product-detail', product.id]">Show</button>
+  <div
+    class="thumbnail"
+    [style.background-image]="'url(/assets/imgs/' + product.thumbnail + ')'"
+  ></div>
+  <h2>{{ product.productName }}</h2>
+  <p>{{ product.price }} €</p>
+  <div class="colours">
+    <div [style.background-color]="product.colours[0]"></div>
+    <div [style.background-color]="product.colours[1]"></div>
+    <div [style.background-color]="product.colours[2]"></div>
+  </div>
+  <button
+    class="btn-primary"
+    type="button"
+    [routerLink]="['/product-detail', product.id]"
+  >
+    Shop now!
+  </button>
 </div>

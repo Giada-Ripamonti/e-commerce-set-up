@@ -1,18 +1,19 @@
 button {
-    border-radius: 1px;
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    font-family: $font-serif;
     font-size: $font-size-s;
     text-transform: lowercase;
     margin: 1rem 0;
+    border-radius: 3px;
 }
 
 .btn-primary {
     border: none;
-    color: $blue-grey;
+    color: $light-almond;
     background-color: $brown;
     &:hover {
-        box-shadow: 2px 2px 4px 1px $blue-grey;  
+        box-shadow: 2px 2px 4px 1px $dark-brown;  
     }
     &:active {
         transform: translateY(0.5px);
@@ -32,11 +33,12 @@ button {
 }
 
 .btn-green{
-    border: 1px solid $dark-grey;
     background-color: $blue-grey;
     color: $light-almond;
+    border: none;
     &:hover {
         background-color: $dark-sage;
+        box-shadow: 2px 2px 4px 1px $blue-grey;  
     }
     &:active {
         transform: scale(99%) ;

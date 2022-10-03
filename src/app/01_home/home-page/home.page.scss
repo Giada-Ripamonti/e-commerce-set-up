@@ -29,8 +29,8 @@ div {
 }
 
 #bestsellers {
+  text-align: center;
   div {
-    text-align: center;
     margin: 1rem auto;
     @include screen-min($screen-m) {
       display: flex;

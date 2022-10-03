@@ -6,21 +6,22 @@
 /* ----------- colours ----------- */
 /* ----------- breakpoints ----------- */
 button {
-  border-radius: 1px;
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
+  font-family: "Playfair Display", serif;
   font-size: 1rem;
   text-transform: lowercase;
   margin: 1rem 0;
+  border-radius: 3px;
 }
 
 .btn-primary {
   border: none;
-  color: #384b45;
+  color: #fcf4d1;
   background-color: #D0802E;
 }
 .btn-primary:hover {
-  box-shadow: 2px 2px 4px 1px #384b45;
+  box-shadow: 2px 2px 4px 1px #995f25;
 }
 .btn-primary:active {
   transform: translateY(0.5px);
@@ -39,12 +40,13 @@ button {
 }
 
 .btn-green {
-  border: 1px solid #242424;
   background-color: #384b45;
   color: #fcf4d1;
+  border: none;
 }
 .btn-green:hover {
   background-color: #668C75;
+  box-shadow: 2px 2px 4px 1px #384b45;
 }
 .btn-green:active {
   transform: scale(99%);
@@ -102,9 +104,13 @@ button {
 .form-container .icon-btn {
   background-color: transparent;
   margin: 1rem;
+  line-height: 1.8rem;
 }
 .form-container .icon-btn:hover {
   border: 1px solid #384b45;
+}
+.form-container .icon-btn a {
+  font-size: 2rem;
 }
 .form-container h1, .form-container p {
   text-align: center;
